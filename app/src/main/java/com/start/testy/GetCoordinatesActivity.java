@@ -46,7 +46,7 @@ import java.nio.charset.MalformedInputException;
 import java.security.Security;
 import java.util.Scanner;
 
-public class MyActivity extends AppCompatActivity {
+public class GetCoordinatesActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.start.testy.MESSAGE";
     LocationManager lm;
     Criteria cr;
@@ -103,7 +103,7 @@ public class MyActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.change_ip) {
             Intent intent = new Intent();
-            intent.setClass(this, DisplayMessageActivity.class);
+            intent.setClass(this, ChangeIpActivity.class);
             startActivity(intent);
         }
         else if (id == R.id.action_settings) {

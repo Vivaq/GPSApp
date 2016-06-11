@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class ChangeIpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         EditText et = (EditText) findViewById(R.id.new_ip);
         String newUrl = "http://"+et.getText().toString()+"/enter/";
         try {
-            MyActivity.url = new URL(newUrl);
+            GetCoordinatesActivity.url = new URL(newUrl);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
